@@ -1,0 +1,194 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9031c2a5ddb61544f96f709b49f3150a, type: 3}
+  m_Name: Romania
+  m_EditorClassIdentifier: 
+  m_Nodes:
+  - m_Name: Oradea
+    m_Position: {x: 2.33, y: 0, z: 9.11}
+  - m_Name: Zerubd
+    m_Position: {x: 1.79, y: 0, z: 8.11}
+  - m_Name: Arad
+    m_Position: {x: 1.38, y: 0, z: 7.09}
+  - m_Name: Timisoara
+    m_Position: {x: 1.38, y: 0, z: 4.89}
+  - m_Name: Lugoj
+    m_Position: {x: 3.28, y: 0, z: 4.08}
+  - m_Name: Mehadia
+    m_Position: {x: 3.36, y: 0, z: 3.12}
+  - m_Name: Dobreta
+    m_Position: {x: 3.2, y: 0, z: 2.04}
+  - m_Name: Craiova
+    m_Position: {x: 5.49, y: 0, z: 1.73}
+  - m_Name: Rimnicu Vilcea
+    m_Position: {x: 5.03, y: 0, z: 4.91}
+  - m_Name: Sibiu
+    m_Position: {x: 4.18, y: 0, z: 6.23}
+  - m_Name: Fagaras
+    m_Position: {x: 6.91, y: 0, z: 5.97}
+  - m_Name: Pitesti
+    m_Position: {x: 7.4, y: 0, z: 3.77}
+  - m_Name: Bucharest
+    m_Position: {x: 9.38, y: 0, z: 2.8}
+  - m_Name: Giurgiu
+    m_Position: {x: 8.67, y: 0, z: 1.17}
+  - m_Name: Urziceni
+    m_Position: {x: 10.73, y: 0, z: 3.39}
+  - m_Name: Hirsova
+    m_Position: {x: 12.77, y: 0, z: 3.37}
+  - m_Name: Eforie
+    m_Position: {x: 13.72, y: 0, z: 1.9}
+  - m_Name: Vaslui
+    m_Position: {x: 12.22, y: 0, z: 5.87}
+  - m_Name: Lasi
+    m_Position: {x: 11.35, y: 0, z: 7.48}
+  - m_Name: Neamt
+    m_Position: {x: 9.25, y: 0, z: 8.31}
+  m_Edges:
+  - From: 0
+    To: 1
+    Cost: 71
+  - From: 1
+    To: 0
+    Cost: 71
+  - From: 1
+    To: 2
+    Cost: 75
+  - From: 2
+    To: 1
+    Cost: 75
+  - From: 0
+    To: 9
+    Cost: 151
+  - From: 9
+    To: 0
+    Cost: 151
+  - From: 2
+    To: 9
+    Cost: 140
+  - From: 9
+    To: 2
+    Cost: 140
+  - From: 2
+    To: 3
+    Cost: 118
+  - From: 3
+    To: 2
+    Cost: 118
+  - From: 3
+    To: 4
+    Cost: 111
+  - From: 4
+    To: 3
+    Cost: 111
+  - From: 4
+    To: 5
+    Cost: 70
+  - From: 5
+    To: 4
+    Cost: 70
+  - From: 5
+    To: 6
+    Cost: 75
+  - From: 6
+    To: 5
+    Cost: 75
+  - From: 6
+    To: 7
+    Cost: 120
+  - From: 7
+    To: 6
+    Cost: 120
+  - From: 7
+    To: 8
+    Cost: 146
+  - From: 8
+    To: 7
+    Cost: 146
+  - From: 7
+    To: 11
+    Cost: 138
+  - From: 11
+    To: 7
+    Cost: 138
+  - From: 8
+    To: 11
+    Cost: 97
+  - From: 11
+    To: 8
+    Cost: 97
+  - From: 8
+    To: 9
+    Cost: 80
+  - From: 9
+    To: 8
+    Cost: 80
+  - From: 9
+    To: 10
+    Cost: 99
+  - From: 10
+    To: 9
+    Cost: 99
+  - From: 10
+    To: 12
+    Cost: 211
+  - From: 12
+    To: 10
+    Cost: 211
+  - From: 11
+    To: 12
+    Cost: 101
+  - From: 12
+    To: 11
+    Cost: 101
+  - From: 12
+    To: 13
+    Cost: 90
+  - From: 13
+    To: 12
+    Cost: 90
+  - From: 12
+    To: 14
+    Cost: 85
+  - From: 14
+    To: 12
+    Cost: 85
+  - From: 14
+    To: 15
+    Cost: 98
+  - From: 15
+    To: 14
+    Cost: 98
+  - From: 15
+    To: 16
+    Cost: 86
+  - From: 16
+    To: 15
+    Cost: 86
+  - From: 14
+    To: 17
+    Cost: 142
+  - From: 17
+    To: 14
+    Cost: 142
+  - From: 17
+    To: 18
+    Cost: 92
+  - From: 18
+    To: 17
+    Cost: 92
+  - From: 19
+    To: 18
+    Cost: 87
+  - From: 18
+    To: 19
+    Cost: 87
