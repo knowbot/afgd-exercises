@@ -7,7 +7,7 @@ namespace AfGD.Execise3
     public static class BreadthFirstSearch
     {
         // Exercise 3.1 - Implement Breadth first search. 
-        // Explore the graph and fill the _cameFrom_ dictionairy with data using breadth first search.
+        // Explore the graph and fill the _cameFrom_ dictionary with data using breadth first search.
         // PathFinding.ReconstructPath() will use the data in cameFrom to reconstruct 
         // a path between the start node and end node. 
         //
@@ -22,7 +22,25 @@ namespace AfGD.Execise3
         //
         public static void Execute(Graph graph, Node start, Node goal, Dictionary<Node, Node> cameFrom)
         {
-            throw new NotImplementedException("Implement BreadthFirstSearch search algorithm here.");
+            Queue<Node> frontier = new Queue<Node>();
+            frontier.Enqueue(start);
+            while (frontier.Count != 0)
+            {
+                Node curr = frontier.Dequeue();
+                if (curr == goal)
+                    break;
+                List<Node> neighbours = new List<Node>();
+                graph.GetNeighbours(curr, neighbours);
+                foreach (var next in neighbours)
+                {
+                    if (!cameFrom.ContainsKey(next))
+                    {
+                        cameFrom[next] = curr;
+                        frontier.Enqueue(next);
+                    }
+                }
+            }
+            
         }
     }
 }

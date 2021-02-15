@@ -10,7 +10,7 @@ namespace AfGD.Execise3
         // Various path finding algorithms we can use.
         enum PathFindingAlgorithm
         {
-            BreadFirstSearch,
+            BreadthFirstSearch,
             UniformCostSearch,
             AStar,
         }
@@ -66,7 +66,7 @@ namespace AfGD.Execise3
                 case PathFindingAlgorithm.AStar:
                     AStarSearch.Execute(m_Graph, start, goal, cameFrom);
                     break;
-                case PathFindingAlgorithm.BreadFirstSearch:
+                case PathFindingAlgorithm.BreadthFirstSearch:
                     BreadthFirstSearch.Execute(m_Graph, start, goal, cameFrom);
                     break;
                 case PathFindingAlgorithm.UniformCostSearch:

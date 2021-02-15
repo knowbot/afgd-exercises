@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using UnityEditor.VersionControl;
 using UnityEngine;
 
 namespace AfGD.Execise3
@@ -7,7 +8,7 @@ namespace AfGD.Execise3
     public static class UniformCostSearch
     {
         // Exercise 3.2 - Implement uniform cost search (or Dijkstra's algorithm)
-        // Explore the graph and fill the _cameFrom_ dictionairy with data using uniform cost search.
+        // Explore the graph and fill the _cameFrom_ dictionary with data using uniform cost search.
         // Similar to Exercise 3.1 PathFinding.ReconstructPath() will use the data in cameFrom  
         // to reconstruct a path between the start node and end node. 
         //
@@ -24,14 +25,33 @@ namespace AfGD.Execise3
         //          var priorityQueue = new PriorityQueue<Node>()
         //      
         //      Add an entry to the PriorityQueue as follows:
-        //          priorityQueue.Enqueue(node, priority); // This will add the entry node to the queue accordition to the priority value (float)
+        //          priorityQueue.Enqueue(node, priority); // This will add the entry node to the queue according to the priority value (float)
         //          
         //      Subsequently entries can be popped from the PriorityQueue as follows:
         //          var node = priorityQueue.Dequeue(); // This will take the next node of the queue with the *lowest* priority value
         //
         public static void Execute(Graph graph, Node startPoint, Node endPoint, Dictionary<Node, Node> cameFrom)
         {
-            throw new NotImplementedException("Implement UniformCostSearch search algorithm here.");
+            var frontier = new PriorityQueue<Node>();
+            var costSoFar = new Dictionary<Node, float>();
+            frontier.Enqueue(startPoint, 0);
+            costSoFar[startPoint] = 0;
+            while (frontier.Count > 0)
+            {
+                Node curr = frontier.Dequeue();
+                if (curr == endPoint)
+                    break;
+                List<Node> neighbours = new List<Node>();
+                graph.GetNeighbours(curr, neighbours);
+                foreach (Node next in neighbours)
+                {
+                    float newCost = graph.GetCost(curr, next) + costSoFar[curr];
+                    if (costSoFar.ContainsKey(next) && !(costSoFar[next] > newCost)) continue;
+                    costSoFar[next] = newCost;
+                    cameFrom[next] = curr;
+                    frontier.Enqueue(next, newCost);
+                }
+            }
         }
     }
 }

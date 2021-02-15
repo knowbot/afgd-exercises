@@ -48,8 +48,8 @@ namespace AfGD.Execise3
             {
                 // Grab the pathfinding monobehaviour and
                 // execute the pathfinding algorithm.
-                var pathFindingMonobehaviour = (PathFinding)target;
-                pathFindingMonobehaviour.Run();
+                var pathFindingMonoBehaviour = (PathFinding)target;
+                pathFindingMonoBehaviour.Run();
 
                 // Repaint SceneView to show the result
                 SceneView.RepaintAll();

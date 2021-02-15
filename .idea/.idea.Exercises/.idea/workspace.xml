@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="569b6cca-980f-4914-8cf1-7a4e014c09b4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Exercises/Exercise1/BreakoutEditor/BreakoutGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Exercises/Exercise1/BreakoutEditor/BreakoutGame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Exercises/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Exercises/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Exercises/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Exercises/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Exercises/Exercise3/3.1 - Breadth First Search.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Exercises/Exercise3/3.1 - Breadth First Search.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Exercises/Exercise3/3.2 - Uniform Cost Search.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Exercises/Exercise3/3.2 - Uniform Cost Search.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Exercises/Exercise3/3.3 - A-Star Search.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Exercises/Exercise3/3.3 - A-Star Search.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Exercises/Exercise3/Editor/PathFindingEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Exercises/Exercise3/Editor/PathFindingEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Exercises/Exercise3/PathFinding.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Exercises/Exercise3/PathFinding.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,6 +23,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/394C8FAE-4BA1-4DD2-A259-BD441D5BEF25/9d/125c34a4/Queue`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Temp/BreakoutGame.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -23,6 +31,11 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Exercises/Exercise1/BreakoutEditor/BreakoutGame.cs" />
         <option value="$PROJECT_DIR$/Assets/Exercises/Exercise1/BreakoutGame.cs" />
+        <option value="$PROJECT_DIR$/Assets/Exercises/Exercise3/Editor/PathFindingEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Exercises/Exercise3/PathFinding.cs" />
+        <option value="$PROJECT_DIR$/Assets/Exercises/Exercise3/3.1 - Breadth First Search.cs" />
+        <option value="$PROJECT_DIR$/Assets/Exercises/Exercise3/3.2 - Uniform Cost Search.cs" />
+        <option value="$PROJECT_DIR$/Assets/Exercises/Exercise3/3.3 - A-Star Search.cs" />
       </list>
     </option>
   </component>
@@ -68,6 +81,7 @@
       <updated>1613350228515</updated>
       <workItem from="1613350258261" duration="778000" />
       <workItem from="1613382166019" duration="5131000" />
+      <workItem from="1613394489799" duration="3494000" />
     </task>
     <servers />
   </component>
