@@ -1,0 +1,366 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9031c2a5ddb61544f96f709b49f3150a, type: 3}
+  m_Name: NavigationMap
+  m_EditorClassIdentifier: 
+  m_Nodes:
+  - m_Name: Node_A1
+    m_Position: {x: 3.6, y: 0, z: 10}
+  - m_Name: Node_A2
+    m_Position: {x: 2.8, y: 0, z: 6.9}
+  - m_Name: Node_B1
+    m_Position: {x: 3.9, y: 0, z: 2}
+  - m_Name: Node_B2
+    m_Position: {x: 1.2, y: 0, z: 3.7}
+  - m_Name: Node_B3
+    m_Position: {x: 1.1, y: 0, z: 7}
+  - m_Name: Node_B4
+    m_Position: {x: 1.1, y: 0, z: 13.5}
+  - m_Name: Node_B5
+    m_Position: {x: 2.8, y: 0, z: 15}
+  - m_Name: Node_C1
+    m_Position: {x: 6.8, y: 0, z: 2}
+  - m_Name: Node_C2
+    m_Position: {x: 9.3, y: 0, z: 5.3}
+  - m_Name: Node_D1
+    m_Position: {x: 11.7, y: 0, z: 2}
+  - m_Name: Node_D2
+    m_Position: {x: 11.3, y: 0, z: 5.3}
+  - m_Name: Node_D3
+    m_Position: {x: 10.9, y: 0, z: 8.6}
+  - m_Name: Node_D4
+    m_Position: {x: 8.9, y: 0, z: 8.9}
+  - m_Name: Node_D5
+    m_Position: {x: 6.8, y: 0, z: 10.3}
+  - m_Name: Node_D6
+    m_Position: {x: 6.8, y: 0, z: 14.3}
+  - m_Name: Node_D7
+    m_Position: {x: 4.8, y: 0, z: 15.1}
+  - m_Name: Node_E1
+    m_Position: {x: 10.8, y: 0, z: 11.1}
+  - m_Name: Node_E2
+    m_Position: {x: 11.7, y: 0, z: 13.5}
+  - m_Name: Node_E3
+    m_Position: {x: 8.4, y: 0, z: 14.3}
+  - m_Name: Node_F1
+    m_Position: {x: 15, y: 0, z: 11}
+  - m_Name: Node_F2
+    m_Position: {x: 13.3, y: 0, z: 13.5}
+  - m_Name: Node_F3
+    m_Position: {x: 15.7, y: 0, z: 14.3}
+  - m_Name: Node_G1
+    m_Position: {x: 19, y: 0, z: 12.6}
+  - m_Name: Node_G2
+    m_Position: {x: 17.4, y: 0, z: 14.3}
+  - m_Name: Node_H1
+    m_Position: {x: 13.3, y: 0, z: 8.6}
+  - m_Name: Node_H2
+    m_Position: {x: 14.9, y: 0, z: 8.6}
+  - m_Name: Node_H3
+    m_Position: {x: 19, y: 0, z: 8.6}
+  - m_Name: Node_H4
+    m_Position: {x: 19.1, y: 0, z: 10.7}
+  - m_Name: Node_I1
+    m_Position: {x: 17.4, y: 0, z: 2.8}
+  - m_Name: Node_I2
+    m_Position: {x: 19, y: 0, z: 6.1}
+  - m_Name: Node_J1
+    m_Position: {x: 13.3, y: 0, z: 2}
+  - m_Name: Node_J2
+    m_Position: {x: 15.7, y: 0, z: 2.9}
+  - m_Name: Node_K1
+    m_Position: {x: 23.5, y: 0, z: 2.9}
+  - m_Name: Node_K2
+    m_Position: {x: 21.5, y: 0, z: 8.6}
+  - m_Name: Node_K3
+    m_Position: {x: 24.3, y: 0, z: 12.7}
+  - m_Name: Node_L1
+    m_Position: {x: 26.7, y: 0, z: 2.8}
+  - m_Name: Node_L2
+    m_Position: {x: 30, y: 0, z: 10.2}
+  m_Edges:
+  - From: 1
+    To: 0
+    Cost: 3.202
+  - From: 0
+    To: 1
+    Cost: 3.202
+  - From: 2
+    To: 3
+    Cost: 3.191
+  - From: 3
+    To: 2
+    Cost: 3.191
+  - From: 4
+    To: 3
+    Cost: 3.302
+  - From: 3
+    To: 4
+    Cost: 3.302
+  - From: 4
+    To: 5
+    Cost: 6.5
+  - From: 5
+    To: 6
+    Cost: 2.267
+  - From: 7
+    To: 8
+    Cost: 4.14
+  - From: 8
+    To: 7
+    Cost: 4.14
+  - From: 9
+    To: 10
+    Cost: 3.324
+  - From: 10
+    To: 9
+    Cost: 3.324
+  - From: 10
+    To: 11
+    Cost: 3.324
+  - From: 11
+    To: 10
+    Cost: 3.324
+  - From: 11
+    To: 12
+    Cost: 2.022
+  - From: 12
+    To: 11
+    Cost: 2.022
+  - From: 12
+    To: 13
+    Cost: 2.524
+  - From: 13
+    To: 12
+    Cost: 2.524
+  - From: 13
+    To: 14
+    Cost: 4
+  - From: 14
+    To: 13
+    Cost: 4
+  - From: 13
+    To: 15
+    Cost: 5.2
+  - From: 15
+    To: 13
+    Cost: 5.2
+  - From: 14
+    To: 15
+    Cost: 2.154
+  - From: 15
+    To: 14
+    Cost: 2.154
+  - From: 16
+    To: 17
+    Cost: 2.563
+  - From: 17
+    To: 16
+    Cost: 2.563
+  - From: 16
+    To: 18
+    Cost: 4
+  - From: 18
+    To: 16
+    Cost: 4
+  - From: 17
+    To: 18
+    Cost: 3.396
+  - From: 18
+    To: 17
+    Cost: 3.396
+  - From: 19
+    To: 20
+    Cost: 3.023
+  - From: 20
+    To: 19
+    Cost: 3.023
+  - From: 19
+    To: 21
+    Cost: 3.373
+  - From: 21
+    To: 19
+    Cost: 3.373
+  - From: 20
+    To: 21
+    Cost: 2.53
+  - From: 21
+    To: 20
+    Cost: 2.53
+  - From: 22
+    To: 23
+    Cost: 2.335
+  - From: 23
+    To: 22
+    Cost: 2.335
+  - From: 24
+    To: 25
+    Cost: 1.6
+  - From: 25
+    To: 24
+    Cost: 1.6
+  - From: 25
+    To: 26
+    Cost: 4.1
+  - From: 26
+    To: 25
+    Cost: 4.1
+  - From: 26
+    To: 27
+    Cost: 2.102
+  - From: 27
+    To: 26
+    Cost: 2.102
+  - From: 25
+    To: 27
+    Cost: 4.696
+  - From: 27
+    To: 25
+    Cost: 4.696
+  - From: 28
+    To: 29
+    Cost: 3.667
+  - From: 29
+    To: 28
+    Cost: 3.667
+  - From: 30
+    To: 31
+    Cost: 2.563
+  - From: 31
+    To: 30
+    Cost: 2.563
+  - From: 32
+    To: 33
+    Cost: 6.041
+  - From: 33
+    To: 32
+    Cost: 6.041
+  - From: 32
+    To: 34
+    Cost: 9.833
+  - From: 34
+    To: 32
+    Cost: 9.833
+  - From: 33
+    To: 34
+    Cost: 4.965
+  - From: 34
+    To: 33
+    Cost: 4.965
+  - From: 35
+    To: 36
+    Cost: 8.102
+  - From: 36
+    To: 35
+    Cost: 8.102
+  - From: 1
+    To: 4
+    Cost: 3.905
+  - From: 4
+    To: 1
+    Cost: 3.905
+  - From: 2
+    To: 7
+    Cost: 2.9
+  - From: 7
+    To: 2
+    Cost: 2.9
+  - From: 6
+    To: 15
+    Cost: 2.002
+  - From: 15
+    To: 6
+    Cost: 2.002
+  - From: 8
+    To: 10
+    Cost: 2
+  - From: 10
+    To: 8
+    Cost: 2
+  - From: 14
+    To: 18
+    Cost: 1.6
+  - From: 18
+    To: 14
+    Cost: 1.6
+  - From: 11
+    To: 16
+    Cost: 2.502
+  - From: 16
+    To: 11
+    Cost: 2.502
+  - From: 17
+    To: 20
+    Cost: 1.6
+  - From: 20
+    To: 17
+    Cost: 1.6
+  - From: 11
+    To: 24
+    Cost: 2.4
+  - From: 24
+    To: 11
+    Cost: 2.4
+  - From: 9
+    To: 30
+    Cost: 1.6
+  - From: 30
+    To: 9
+    Cost: 1.6
+  - From: 31
+    To: 28
+    Cost: 1.703
+  - From: 28
+    To: 31
+    Cost: 1.703
+  - From: 26
+    To: 29
+    Cost: 2.5
+  - From: 29
+    To: 26
+    Cost: 2.5
+  - From: 19
+    To: 25
+    Cost: 2.402
+  - From: 25
+    To: 19
+    Cost: 2.402
+  - From: 21
+    To: 23
+    Cost: 1.7
+  - From: 23
+    To: 21
+    Cost: 1.7
+  - From: 22
+    To: 27
+    Cost: 1.903
+  - From: 27
+    To: 22
+    Cost: 1.903
+  - From: 26
+    To: 33
+    Cost: 2.5
+  - From: 33
+    To: 26
+    Cost: 2.5
+  - From: 32
+    To: 35
+    Cost: 3.202
+  - From: 35
+    To: 32
+    Cost: 3.202
+  - From: 5
+    To: 4
+    Cost: 6.5
+  - From: 6
+    To: 5
+    Cost: 2.267
