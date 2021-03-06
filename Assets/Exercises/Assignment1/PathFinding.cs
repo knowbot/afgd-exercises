@@ -30,7 +30,7 @@ namespace AfGD.Assignment1
 
         // List of positions that store the result
         // of the path we have found.
-        List<Vector3> m_Path = new List<Vector3>();
+        public List<Vector3> m_Path = new List<Vector3>();
 
         public void Run()
         {

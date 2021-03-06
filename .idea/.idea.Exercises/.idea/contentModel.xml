@@ -8,8 +8,23 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Exercises" t="Include">
+          <e p="Assignment1" t="Include">
+            <e p="A-Star Search.cs" t="Include" />
+            <e p="CurveSegment.cs" t="Include" />
+            <e p="EasingFunctions.cs" t="Include" />
+            <e p="Editor" t="Include">
+              <e p="PathFindingEditor.cs" t="Include" />
+            </e>
+            <e p="MoveAlongPath.cs" t="Include" />
+            <e p="PathFinding.cs" t="Include" />
+            <e p="SplinePath.cs" t="Include" />
+          </e>
           <e p="Common" t="Include">
             <e p="Utils.cs" t="Include" />
+          </e>
+          <e p="ExamplesWeek4" t="Include">
+            <e p="InterpolationExample.cs" t="Include" />
+            <e p="Transformations2D.cs" t="Include" />
           </e>
           <e p="Exercise1" t="Include">
             <e p="BreakoutEditor" t="Include">
