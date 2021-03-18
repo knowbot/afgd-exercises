@@ -5,8 +5,6 @@ using UnityEngine.SocialPlatforms;
 
 namespace AfGD
 {
-    // exercise 2.4
-    // attach to an object so that it moves along a path
     public class MoveAlongPath : MonoBehaviour
     {
         [Tooltip("Path to be followed")] [SerializeField]

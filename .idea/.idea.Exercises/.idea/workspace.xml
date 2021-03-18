@@ -25,21 +25,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="569b6cca-980f-4914-8cf1-7a4e014c09b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Exercises/Assignment1/SplinePath.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Exercises/Assignment1/SplinePath.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Exercises/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Exercises/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Exercises/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Exercises/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Exercises/Assignment1/A-Star Search.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Exercises/Assignment1/A-Star Search.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Exercises/Assignment1/Assignment1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Exercises/Assignment1/Assignment1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Exercises/Assignment1/PathFinding.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Exercises/Assignment1/PathFinding.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Exercises/Exercise1/BreakoutEditor/BreakoutGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Exercises/Exercise1/BreakoutEditor/BreakoutGame.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Exercises/Exercise2/CurveSegment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Exercises/Exercise2/CurveSegment.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Exercises/Exercise2/DebugCurve.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Exercises/Exercise2/DebugCurve.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Exercises/Exercise2/EasingFunctions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Exercises/Exercise2/EasingFunctions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Exercises/Assignment1/MoveAlongPath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Exercises/Assignment1/MoveAlongPath.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Exercises/Assignment1/SplinePath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Exercises/Assignment1/SplinePath.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Zombie/Animations/Zombie.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Zombie/Animations/Zombie.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,6 +118,7 @@
       <workItem from="1614441330004" duration="10663000" />
       <workItem from="1614997420741" duration="40000" />
       <workItem from="1614997581811" duration="8835000" />
+      <workItem from="1615050397232" duration="4542000" />
     </task>
     <servers />
   </component>

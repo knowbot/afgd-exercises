@@ -308,7 +308,6 @@ namespace AfGD
             Vector3 tangent = new Vector3();
             if (path.Contains(cp))
             {
-                Matrix3x2 counterClockwise2D = new Matrix3x2(1, 0, 0, 0, -1, 0);
                 int index = path.IndexOf(cp);
                 if (index == 0 && path.Count > 1)
                 {
@@ -320,13 +319,10 @@ namespace AfGD
                 }
                 else
                 {
-                    tangent = tightness *
-                              (path[index + 1] - path[index - 1]);
+                    tangent = (path[index + 1] - path[index - 1]);
                 }
             }
-            // return tangent.normalized;
-            return tangent;
+            return tangent*tightness;
         }
-
     }
 }
