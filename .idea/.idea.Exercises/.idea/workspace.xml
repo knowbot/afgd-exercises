@@ -25,13 +25,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="569b6cca-980f-4914-8cf1-7a4e014c09b4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Exercises/Assignment2/Assignment2 - MEE.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Exercises/Assignment2/Assignment2 - MEE.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Exercises/Assignment2/MultiFABRIK.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Exercises/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Exercises/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Exercises/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Exercises/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Exercises/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Exercises/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Exercises/Assignment1/Assignment1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Exercises/Assignment1/Assignment1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Exercises/Assignment1/MoveAlongPath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Exercises/Assignment1/MoveAlongPath.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Exercises/Assignment1/SplinePath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Exercises/Assignment1/SplinePath.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Zombie/Animations/Zombie.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Zombie/Animations/Zombie.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Exercises/Assignment2/Assignment2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Exercises/Assignment2/Assignment2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Exercises/Assignment2/FABRIK.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Exercises/Assignment2/FABRIK.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,15 +69,23 @@
         <option value="$PROJECT_DIR$/Assets/Exercises/Assignment1/Editor/SplinePathEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Exercises/Assignment1/SplinePath.cs" />
         <option value="$PROJECT_DIR$/Assets/Exercises/Assignment1/MoveAlongPath.cs" />
+        <option value="$PROJECT_DIR$/Assets/Exercises/Assignment2/FABRIKMultipleEndEffectors.cs" />
+        <option value="$PROJECT_DIR$/Assets/Exercises/Assignment2/MultiFABRIK" />
+        <option value="$PROJECT_DIR$/Assets/Exercises/Assignment2/MultiFABRIK.cs" />
+        <option value="$PROJECT_DIR$/Assets/Exercises/Assignment2/FABRIK.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1oUnq2AX375QcCcUh3bB5dmrKly" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3502052" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.3002736" />
@@ -119,6 +130,10 @@
       <workItem from="1614997420741" duration="40000" />
       <workItem from="1614997581811" duration="8835000" />
       <workItem from="1615050397232" duration="4542000" />
+      <workItem from="1616260364716" duration="8198000" />
+      <workItem from="1616327424336" duration="22435000" />
+      <workItem from="1616697055581" duration="5403000" />
+      <workItem from="1616710082483" duration="3020000" />
     </task>
     <servers />
   </component>
@@ -140,6 +155,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -227,20 +243,24 @@
     </state>
     <state width="1877" height="129" key="GridCell.Tab.3.right/1920.0.1536.832/0.0.1920.1038@0.0.1920.1038" timestamp="1614459588692" />
     <state width="1493" height="129" key="GridCell.Tab.3.right/1920.0.1536.832/0.0.1920.1038@1920.0.1536.832" timestamp="1614451979419" />
-    <state x="727" y="244" key="RiderGenerateDialog" timestamp="1615000037680">
+    <state x="727" y="244" key="RiderGenerateDialog" timestamp="1616333412838">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="727" y="244" key="RiderGenerateDialog/1920.0.1536.832/0.0.1920.1038@0.0.1920.1038" timestamp="1614442188497" />
-    <state x="727" y="244" key="RiderGenerateDialog/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1615000037680" />
+    <state x="727" y="244" key="RiderGenerateDialog/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1616333412838" />
+    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog" timestamp="1616697875246">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1616697875246" />
     <state x="627" y="253" width="666" height="564" key="find.popup" timestamp="1615004664925">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="627" y="253" width="666" height="534" key="find.popup/1920.0.1536.832/0.0.1920.1038@0.0.1920.1038" timestamp="1614451486961" />
     <state x="627" y="253" width="666" height="564" key="find.popup/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1615004664925" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1615002147762">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1616260974069">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1615002147762" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1616260974069" />
     <state x="682" y="433" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1613382250186">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

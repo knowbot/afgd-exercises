@@ -19,12 +19,20 @@
             <e p="PathFinding.cs" t="Include" />
             <e p="SplinePath.cs" t="Include" />
           </e>
+          <e p="Assignment2" t="Include">
+            <e p="FABRIK.cs" t="Include" />
+            <e p="MultiFABRIK.cs" t="Include" />
+          </e>
           <e p="Common" t="Include">
             <e p="Utils.cs" t="Include" />
           </e>
           <e p="ExamplesWeek4" t="Include">
             <e p="InterpolationExample.cs" t="Include" />
             <e p="Transformations2D.cs" t="Include" />
+          </e>
+          <e p="ExamplesWeek6" t="Include">
+            <e p="JacobianTransposeIK.cs" t="Include" />
+            <e p="TrigonometricIK.cs" t="Include" />
           </e>
           <e p="Exercise1" t="Include">
             <e p="BreakoutEditor" t="Include">
@@ -56,6 +64,27 @@
             <e p="Node.cs" t="Include" />
             <e p="PathFinding.cs" t="Include" />
             <e p="PriorityQueue.cs" t="Include" />
+          </e>
+          <e p="Exercise5" t="Include">
+            <e p="Editor" t="Include">
+              <e p="SkeletonControllerEditor.cs" t="Include" />
+            </e>
+            <e p="Exercise5.1" t="Include">
+              <e p="Skeleton.cs" t="Include" />
+            </e>
+            <e p="Exercise5.2" t="Include">
+              <e p="SkeletonController.cs" t="Include" />
+            </e>
+            <e p="Exercise5.3" t="Include">
+              <e p="ArmHierarchy.cs" t="Include" />
+            </e>
+            <e p="Resources" t="Include">
+              <e p="WeightsUnlitTransparent.shader" t="Include" />
+            </e>
+            <e p="Structures" t="Include">
+              <e p="AnimationPose.cs" t="Include" />
+              <e p="TriangleMesh.cs" t="Include" />
+            </e>
           </e>
         </e>
       </e>
