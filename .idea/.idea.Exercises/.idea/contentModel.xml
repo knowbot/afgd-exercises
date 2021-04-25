@@ -21,7 +21,9 @@
           </e>
           <e p="Assignment2" t="Include">
             <e p="FABRIK.cs" t="Include" />
-            <e p="MultiFABRIK.cs" t="Include" />
+            <e p="FABRIKSolver.cs" t="Include" />
+            <e p="IKChain.cs" t="Include" />
+            <e p="IKJoint.cs" t="Include" />
           </e>
           <e p="Common" t="Include">
             <e p="Utils.cs" t="Include" />

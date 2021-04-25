@@ -19,7 +19,7 @@ namespace AfGD.Assignment1
         private static float HeuristicDistance(Node startPoint, Node endPoint)
         {
             // Heuristic is adjusted to the order of magnitude of the costs
-            return (Math.Abs(startPoint.Position.x - endPoint.Position.x) + Math.Abs(startPoint.Position.z - endPoint.Position.z)) * 100;
+            return (Math.Abs(startPoint.Position.x - endPoint.Position.x) + Math.Abs(startPoint.Position.z - endPoint.Position.z));
         }
         
         public static void Execute(Graph graph, Node startPoint, Node endPoint, Dictionary<Node, Node> cameFrom)
