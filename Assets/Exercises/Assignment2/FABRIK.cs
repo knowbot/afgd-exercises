@@ -86,7 +86,7 @@ namespace Exercises.Assignment2
             jointPositions[jointPositions.Length - 1] = targetPosition;
             for (int i = jointPositions.Length - 2; i > 0; i--)
             {
-                ApplyConstraints(i, ref jointPositions);
+                // ApplyConstraints(i, ref jointPositions);
                 float forwDist = Vector3.Distance(jointPositions[i + 1], jointPositions[i]);
                 float delta = _distances[i] / forwDist;
                 jointPositions[i] = (1 - delta) * jointPositions[i+1] + delta * jointPositions[i];

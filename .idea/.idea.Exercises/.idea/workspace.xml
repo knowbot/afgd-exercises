@@ -25,18 +25,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="569b6cca-980f-4914-8cf1-7a4e014c09b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Exercises/Assignment2/FABRIKSolver.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Exercises/Assignment2/IKChain.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Exercises/Assignment2/IKChain.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Exercises/Assignment2/IKJoint.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Exercises/Assignment2/IKJoint.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Exercises/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Exercises/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Exercises/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Exercises/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Exercises/Assignment1/A-Star Search.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Exercises/Assignment1/A-Star Search.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Exercises/Assignment2/Assignment2 - MEE.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Exercises/Assignment2/Assignment2 - MEE.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Exercises/Assignment2/MultiFABRIK.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Exercises/Assignment2/MultiFABRIK.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Exercises/Assignment2/FABRIKSolver.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Exercises/Assignment2/Assignment2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Exercises/Assignment2/Assignment2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Exercises/Assignment2/FABRIK.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Exercises/Assignment2/FABRIK.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,9 +70,9 @@
         <option value="$PROJECT_DIR$/Assets/Exercises/Assignment2/JointChain.cs" />
         <option value="$PROJECT_DIR$/Assets/Exercises/Assignment2/MultiFABRIK.cs" />
         <option value="$PROJECT_DIR$/Assets/Exercises/Assignment2/IKChain.cs" />
-        <option value="$PROJECT_DIR$/Assets/Exercises/Assignment2/FABRIK.cs" />
         <option value="$PROJECT_DIR$/Assets/Exercises/Assignment2/IKJoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Exercises/Assignment2/FABRIKSolver.cs" />
+        <option value="$PROJECT_DIR$/Assets/Exercises/Assignment2/FABRIK.cs" />
       </list>
     </option>
   </component>
@@ -148,6 +139,8 @@
       <workItem from="1618843276878" duration="3814000" />
       <workItem from="1619216973676" duration="21260000" />
       <workItem from="1619288553802" duration="2277000" />
+      <workItem from="1619440537410" duration="1279000" />
+      <workItem from="1619442598378" duration="1001000" />
     </task>
     <servers />
   </component>
@@ -290,10 +283,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="851" y="0" width="789" height="831" key="dock-window-2/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1619250228258" />
-    <state x="2275" y="-20" width="1252" height="880" maximized="true" key="dock-window-3" timestamp="1619288881811">
+    <state x="2275" y="-20" width="1252" height="880" maximized="true" key="dock-window-3" timestamp="1619443015563">
       <screen x="1920" y="0" width="1536" height="832" />
     </state>
-    <state x="2275" y="-20" width="1252" height="880" maximized="true" key="dock-window-3/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1619288881811" />
+    <state x="2275" y="-20" width="1252" height="880" maximized="true" key="dock-window-3/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1619443015563" />
     <state x="627" y="253" width="666" height="564" key="find.popup" timestamp="1615004664925">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
