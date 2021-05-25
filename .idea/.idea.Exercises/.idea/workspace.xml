@@ -25,9 +25,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="569b6cca-980f-4914-8cf1-7a4e014c09b4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Exercises/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Exercises/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Exercises/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Exercises/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Exercises/Assignment2/Assignment2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Exercises/Assignment2/Assignment2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Exercises/Assignment2/FABRIK.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Exercises/Assignment2/FABRIK.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Exercises/Assignment3/DungeonGenerator.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Exercises/Assignment3/DungeonGenerator.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Exercises/Assignment3/Node.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Exercises/Assignment3/Node.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +44,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/82EC470C-9131-4935-8AD0-C83AD628910C/47/b5fdd483/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9577AC7A-62EF-4317-9789-031239BA8798/ba/31317406/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Downloads/CurveSegment.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/82EC470C-9131-4935-8AD0-C83AD628910C/b9/f30c22b7/Bounds.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -73,6 +76,8 @@
         <option value="$PROJECT_DIR$/Assets/Exercises/Assignment2/IKJoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Exercises/Assignment2/FABRIKSolver.cs" />
         <option value="$PROJECT_DIR$/Assets/Exercises/Assignment2/FABRIK.cs" />
+        <option value="$PROJECT_DIR$/Assets/Exercises/Assignment3/DungeonGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Exercises/Assignment3/Node.cs" />
       </list>
     </option>
   </component>
@@ -141,6 +146,11 @@
       <workItem from="1619288553802" duration="2277000" />
       <workItem from="1619440537410" duration="1279000" />
       <workItem from="1619442598378" duration="1001000" />
+      <workItem from="1620145704035" duration="5709000" />
+      <workItem from="1620159984185" duration="13389000" />
+      <workItem from="1620228928006" duration="1201000" />
+      <workItem from="1620242262742" duration="3520000" />
+      <workItem from="1620648141445" duration="2448000" />
     </task>
     <servers />
   </component>
@@ -283,19 +293,23 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="851" y="0" width="789" height="831" key="dock-window-2/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1619250228258" />
-    <state x="2275" y="-20" width="1252" height="880" maximized="true" key="dock-window-3" timestamp="1619443015563">
+    <state x="2275" y="-20" width="1252" height="880" maximized="true" key="dock-window-3" timestamp="1620146054839">
       <screen x="1920" y="0" width="1536" height="832" />
     </state>
-    <state x="2275" y="-20" width="1252" height="880" maximized="true" key="dock-window-3/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1619443015563" />
+    <state x="2275" y="-20" width="1252" height="880" maximized="true" key="dock-window-3/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1620146054839" />
     <state x="627" y="253" width="666" height="564" key="find.popup" timestamp="1615004664925">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="627" y="253" width="666" height="534" key="find.popup/1920.0.1536.832/0.0.1920.1038@0.0.1920.1038" timestamp="1614451486961" />
     <state x="627" y="253" width="666" height="564" key="find.popup/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1615004664925" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1619222185676">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1620245171462">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1619222185676" />
+    <state x="616" y="240" key="run.anything.popup/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1620245171462" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1620245139109">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1620245139109" />
     <state x="682" y="433" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1613382250186">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

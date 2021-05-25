@@ -2,9 +2,11 @@
 #define SOLUTION_3_2
 #define SOLUTION_3_3
 
+using System;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace AfGD.Assignment3
 {
@@ -14,6 +16,12 @@ namespace AfGD.Assignment3
         {
             X = 0,
             Z = 2,
+        }
+
+        internal struct PointPair
+        {
+            public Vector3 P1;
+            public Vector3 P2;
         }
 
         // Children of this node
@@ -85,22 +93,36 @@ namespace AfGD.Assignment3
         // Only if the newly formed cells are both valid
         // TODO Assignment 3.1 - Attempt to split this cell into two partitions
         // 1) split this cell along a random axis.
-        // 2) check if the newly created partions are valid paritions
-        // 3) only if both partions are valid assign them as new child nodes
+        // 2) check if the newly created partitions are valid partitions
+        // 3) only if both partitions are valid assign them as new child nodes
         //    of this node (m_ChildA & m_ChildB)
         void SplitCell()
         {
 #if SOLUTION_3_1
             // Randomly choose an axis to split on
-
-            // Partition the Cell into two cells; cellA & cellB.
-
-            // Only if we can split into two valid cells do we actually proceed with the split
-            // m_ChildA = ...;
-            // m_ChildB = ...;
-
+            m_SplitAxis = (Random.value >= 0.5) ? Axis.X : Axis.Z;
+            // Randomly choose a split ratio between childs A and B
+            const float maxRatio = 0.3f;
+            float splitRatio = Random.Range(maxRatio, 1 - maxRatio);
+            // Based on the split ratio, find new centers and sizes for both children
+            Vector3 centerA = m_SplitAxis == Axis.Z ? new Vector3(m_Cell.min.x + m_Cell.extents.x * splitRatio, m_Cell.center.y, m_Cell.center.z) 
+                : new Vector3(m_Cell.center.x, m_Cell.center.y, m_Cell.min.z + m_Cell.extents.z * splitRatio);
+            Vector3 centerB = m_SplitAxis == Axis.Z ? new Vector3(m_Cell.max.x - m_Cell.extents.x * (1 - splitRatio), m_Cell.center.y, m_Cell.center.z) 
+                : new Vector3(m_Cell.center.x, m_Cell.center.y, m_Cell.max.z - m_Cell.extents.z * (1 - splitRatio));
+            Vector3 sizeA = m_SplitAxis == Axis.Z ? new Vector3(m_Cell.size.x * splitRatio, m_Cell.size.y, m_Cell.size.z) 
+                : new Vector3(m_Cell.size.x, m_Cell.size.y, m_Cell.size.z  * splitRatio);
+            Vector3 sizeB = m_SplitAxis == Axis.Z ? new Vector3(m_Cell.size.x * (1 - splitRatio), m_Cell.size.y, m_Cell.size.z) 
+                : new Vector3(m_Cell.size.x, m_Cell.size.y, m_Cell.size.z * (1 - splitRatio));
+            // Make the new cells
+            var childA = new Node(new Bounds(centerA, sizeA));
+            var childB = new Node(new Bounds(centerB, sizeB));
+            // Check whether the children are valid cells
+            if (!(childA.IsValidCell() && childB.IsValidCell())) return;
+            // If they are valid, assign them as childA and childB
+            m_ChildA = childA;
+            m_ChildB = childB;
 #endif
-
+            
         }
 
         public void GenerateRoomsRecursively()
@@ -123,10 +145,17 @@ namespace AfGD.Assignment3
         void GenerateRoom()
         {
 #if SOLUTION_3_2
-            // Randomly generate bounds for the room
-
-            // m_Room = ... (todo)
-
+            // Randomly pick size ratios along the X and Z axes, making sure it's at least 0.5
+            var xRatio = Random.Range(0.5f, 0.75f);
+            var zRatio = Random.Range(0.5f, 0.75f);
+            // Find the new room center and size (the centers is picked randomly within certain bounds)
+            var roomCenter = new Vector3(
+                    Random.Range(m_Cell.min.x + m_Cell.extents.x * xRatio * 1.2f, m_Cell.max.x - m_Cell.extents.x * xRatio * 1.2f), 
+                    m_Cell.center.y,
+                    Random.Range(m_Cell.min.z + m_Cell.extents.z * zRatio * 1.2f, m_Cell.max.z - m_Cell.extents.z * zRatio * 1.2f));
+            var roomSize = new Vector3(m_Cell.size.x * xRatio, m_Cell.size.y, m_Cell.size.z * zRatio);
+            // Make the room
+            m_Room = new Bounds(roomCenter, roomSize);
 #endif
 
             // Spawn Mesh that represents room
@@ -191,7 +220,51 @@ namespace AfGD.Assignment3
             //        (or another hallway if the connecting child node has child nodes itself))
             // 6) Create a Cube that represents the hallway (i.e. GameObject.CreatePrimitive(PrimitiveType.Cube);)
 #if SOLUTION_3_3
+            float minX = Math.Max(m_ChildA.Room.min.x, m_ChildB.Room.min.x); 
+            float maxX = Math.Min(m_ChildA.Room.max.x, m_ChildB.Room.max.x);
+            
+            float minZ = Math.Max(m_ChildA.Room.min.z, m_ChildB.Room.min.z);
+            float maxZ = Math.Min(m_ChildA.Room.max.z, m_ChildB.Room.max.z);
 
+            // Sanity check
+            if ((m_SplitAxis == Axis.Z && minZ >= maxZ) || (m_SplitAxis == Axis.X && minX >= maxX))
+            {
+                Debug.LogError("No overlap found!");
+                return;
+            }
+            // Pick a random point in the overlapping section
+            var rayPoint = m_SplitAxis == Axis.X ? 
+                new Vector3(Random.Range(minX + .5f, maxX - .5f), m_Room.center.y, Random.Range(minZ, maxZ))
+                : new Vector3(Random.Range(minX, maxX), m_Room.center.y, Random.Range(minZ + .5f, maxZ - .5f));
+            Vector3 hallwayStart = Vector3.zero;
+            Vector3 hallwayEnd = Vector3.zero;
+            RaycastHit hit;
+            switch (m_SplitAxis)
+            {
+                case Axis.X:
+                    if (Physics.Raycast(rayPoint, -Vector3.forward, out hit))
+                        hallwayStart = hit.point;
+                    if (Physics.Raycast(rayPoint, Vector3.forward, out hit))
+                        hallwayEnd = hit.point;
+                    break;
+                case Axis.Z:
+                    if (Physics.Raycast(rayPoint, -Vector3.right, out hit))
+                        hallwayStart = hit.point;
+                    if (Physics.Raycast(rayPoint, Vector3.right, out hit))
+                        hallwayEnd = hit.point;
+                    break;
+            }
+
+            Vector3 between = hallwayEnd - hallwayStart;
+            float distance = between.magnitude;
+            var hallway = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            var v = Vector3.one;
+            v[(int) m_SplitAxis] = distance;
+            hallway.transform.localScale = v;
+            hallway.transform.position = hallwayStart + (between / 2f);
+            // hallway.transform.LookAt(hallwayEnd);
+            
+            hallway.AddComponent<BoxCollider>();
 #endif
         }
 
